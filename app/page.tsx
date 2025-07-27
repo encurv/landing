@@ -16,71 +16,74 @@ export default function Home() {
     <main className="bg-black text-white">
       <Headline />
 
-      <Section>
-        <Card className="grid h-full min-w-full items-center gap-8 p-6 lg:max-w-md lg:grid-cols-2">
-          <div className="flex-shrink-0">
-            <Blocks />
-          </div>
-          <div>
-            <CardTitle className="flex flex-col text-2xl font-bold">
-              Signal over noise
-            </CardTitle>
-            <CardDescription className="mt-2 text-lg">
-              Our memory engine automatically identifies and extracts valuable
-              context from user interactions — preferences, decisions, company
-              knowledge, and more. No manual tagging, no predefined schemas —
-              just clean, structured memory.
-              <Button className="mt-4 w-full" disabled variant={"outline"}>
-                Coming soon
-              </Button>
-            </CardDescription>
-          </div>
-        </Card>
-      </Section>
+      <div id="features">
+        <Section>
+          <Card className="grid h-full min-w-full items-center gap-8 p-6 lg:max-w-md lg:grid-cols-2">
+            <div className="flex-shrink-0">
+              <Blocks />
+            </div>
+            <div>
+              <CardTitle className="flex flex-col text-2xl font-bold">
+                Signal over noise
+              </CardTitle>
+              <CardDescription className="mt-2 text-lg">
+                Our memory engine automatically identifies and extracts valuable
+                context from user interactions — preferences, decisions, company
+                knowledge, and more. No manual tagging, no predefined schemas —
+                just clean, structured memory.
+                <Button className="mt-4 w-full" disabled variant={"outline"}>
+                  Coming soon
+                </Button>
+              </CardDescription>
+            </div>
+          </Card>
+        </Section>
 
-      <Section>
-        <Card className="grid h-full min-w-full items-center gap-8 p-6 lg:max-w-md lg:grid-cols-2">
-          <div className="lg:order-2">
-            <Filter />
-          </div>
-          <div className="lg:order-1">
-            <CardTitle className="flex flex-col text-2xl font-bold">
-              Smarter prompts, fewer tokens
-            </CardTitle>
-            <CardDescription className="mt-2 text-lg">
-              Only the most relevant information is injected into each model
-              call — keeping responses accurate, personalized, and lean. We help
-              you stay fast, focused, and cost-effective.
-              <Button className="mt-4 w-full" disabled variant={"outline"}>
-                Coming soon
-              </Button>
-            </CardDescription>
-          </div>
-        </Card>
-      </Section>
+        <Section>
+          <Card className="grid h-full min-w-full items-center gap-8 p-6 lg:max-w-md lg:grid-cols-2">
+            <div className="lg:order-2">
+              <Filter />
+            </div>
+            <div className="lg:order-1">
+              <CardTitle className="flex flex-col text-2xl font-bold">
+                Smarter prompts, fewer tokens
+              </CardTitle>
+              <CardDescription className="mt-2 text-lg">
+                Only the most relevant information is injected into each model
+                call — keeping responses accurate, personalized, and lean. We
+                help you stay fast, focused, and cost-effective.
+                <Button className="mt-4 w-full" disabled variant={"outline"}>
+                  Coming soon
+                </Button>
+              </CardDescription>
+            </div>
+          </Card>
+        </Section>
 
-      <Section>
-        <Card className="grid h-full min-w-full items-center gap-8 p-6 lg:max-w-md lg:grid-cols-2">
-          <div>
-            <Graph />
-          </div>
-          <div>
-            <CardTitle className="flex flex-col text-2xl font-bold">
-              Memory that grows with you
-            </CardTitle>
-            <CardDescription className="mt-2 text-lg">
-              Whether you're serving 10 users or 10 million, our infrastructure
-              is built to scale — handling memory storage, retrieval, and
-              updates seamlessly. No ops overhead, no bottlenecks.
-              <Button className="mt-4 w-full" disabled variant={"outline"}>
-                Coming soon
-              </Button>
-            </CardDescription>
-          </div>
-        </Card>
-      </Section>
+        <Section>
+          <Card className="grid h-full min-w-full items-center gap-8 p-6 lg:max-w-md lg:grid-cols-2">
+            <div>
+              <Graph />
+            </div>
+            <div>
+              <CardTitle className="flex flex-col text-2xl font-bold">
+                Memory that grows with you
+              </CardTitle>
+              <CardDescription className="mt-2 text-lg">
+                Whether you're serving 10 users or 10 million, our
+                infrastructure is built to scale — handling memory storage,
+                retrieval, and updates seamlessly. No ops overhead, no
+                bottlenecks.
+                <Button className="mt-4 w-full" disabled variant={"outline"}>
+                  Coming soon
+                </Button>
+              </CardDescription>
+            </div>
+          </Card>
+        </Section>
+      </div>
 
-      <Separator className="mx-auto my-16 max-w-lg" />
+      <Separator className="mx-auto my-16 max-w-lg" id="pricing" />
 
       <Pricing />
 

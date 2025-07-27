@@ -15,7 +15,7 @@ return (
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
     >
-        <div className="container mx-auto flex flex-col items-center justify-center px-4 py-16 lg:px-32 lg:py-24 w-screen lg:max-w-4xl">
+        <div className="container mx-auto flex flex-col items-center justify-center px-4 py-16 lg:px-32 w-screen lg:max-w-7xl">
             {children}
         </div>
     </motion.section>

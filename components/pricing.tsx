@@ -15,7 +15,9 @@ const Pricing = () => {
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <h1 className="text-center text-4xl font-bold">Pricing</h1>
+        <h1 className="text-center text-4xl font-bold">
+          Pricing
+        </h1>
       </motion.div>
       <motion.div
         className="mx-auto flex max-w-7xl flex-col gap-4 px-8 lg:flex-row"

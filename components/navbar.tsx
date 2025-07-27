@@ -16,23 +16,50 @@ const Navbar: FC<IProps> = ({ title }) => {
 
       <div className="hidden gap-8 rounded-full border border-solid px-4 py-2 sm:flex dark:bg-white/[2%]">
         <a>
-          <Button variant="link" className="hidden sm:flex">
+          <Button
+            variant="link"
+            className="hidden sm:flex"
+            onClick={() => {
+              const main = document.getElementById("headline");
+              if (main) {
+                main.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
             <span className="text-sm sm:text-base">Home</span>
           </Button>
         </a>
         <a>
-          <Button variant="link" className="hidden sm:flex">
-            <span className="text-sm sm:text-base">Products</span>
+          <Button
+            variant="link"
+            className="hidden sm:flex"
+            onClick={() => {
+              const features = document.getElementById("features");
+              if (features) {
+                features.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
+            <span className="text-sm sm:text-base">Features</span>
           </Button>
         </a>
         <a>
-          <Button variant="link" className="hidden sm:flex">
+          <Button
+            variant="link"
+            className="hidden sm:flex"
+            onClick={() => {
+              const pricing = document.getElementById("pricing");
+              if (pricing) {
+                pricing.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
             <span className="text-sm sm:text-base">Pricing</span>
           </Button>
         </a>
         <a>
           <Button variant="link" className="hidden sm:flex">
-            <span className="text-sm sm:text-base">About us</span>
+            <span className="text-sm sm:text-base">Imprint</span>
           </Button>
         </a>
       </div>

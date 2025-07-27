@@ -28,7 +28,9 @@ const Footer = () => {
           </Link>
         </div>
 
-        <div className="max-w-32 text-sm text-gray-400">2025 © encurv.</div>
+        <div className="hidden max-w-32 text-sm text-gray-400 sm:block">
+          2025 © encurv.
+        </div>
       </div>
     </footer>
   );
