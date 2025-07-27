@@ -83,7 +83,8 @@ export default function Home() {
         </Section>
       </div>
 
-      <Separator className="mx-auto my-16 max-w-lg" id="pricing" />
+      <div id="pricing" />
+      <Separator className="mx-auto my-16 max-w-lg" />
 
       <Pricing />
 

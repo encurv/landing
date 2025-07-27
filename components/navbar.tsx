@@ -26,7 +26,7 @@ const Navbar: FC<IProps> = ({ title }) => {
   return (
     <nav className="sticky top-0 z-50 flex h-24 items-center justify-between px-4 sm:px-8">
       <motion.div
-        className="flex items-center"
+        className="flex items-center w-40"
         initial={{ opacity: 1 }}
         animate={{ opacity: scrolled ? 0 : 1 }}
         transition={{ duration: 0.4, ease: "easeOut" }}
@@ -64,7 +64,9 @@ const Navbar: FC<IProps> = ({ title }) => {
             onClick={() => {
               const features = document.getElementById("features");
               if (features) {
-                features.scrollIntoView({ behavior: "smooth" });
+                const yOffset = -80; // adjust offset as needed
+                const y = features.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: "smooth" });
               }
             }}
           >
@@ -91,6 +93,7 @@ const Navbar: FC<IProps> = ({ title }) => {
         initial={{ opacity: 1 }}
         animate={{ opacity: scrolled ? 0 : 1 }}
         transition={{ duration: 0.4, ease: "easeOut" }}
+        className="w-40"
       >
         <Button
           variant={"outline"}
