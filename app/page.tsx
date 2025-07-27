@@ -92,13 +92,13 @@ export default function Home() {
 
       <Section>
         <h2 className="text-center text-7xl font-bold">
-          Be the first to know <br /> when  we launch!
+          Be the first to know <br /> when we launch!
         </h2>
-        <div className="mt-8 flex w-full max-w-md items-center justify-between rounded-full bg-white/10 px-2 py-2">
+        <div className="mt-8 flex w-full max-w-md items-center justify-between rounded-full border-1 bg-white/10 px-2 py-2">
           <input
             type="email"
             placeholder="Enter your email"
-            className="w-full bg-transparent text-white placeholder:text-gray-400 focus:outline-none"
+            className="ml-4 w-full bg-transparent text-white placeholder:text-gray-400 focus:outline-none"
           />
           <Button variant={"default"} className="ml-4 rounded-full">
             Join waitlist
