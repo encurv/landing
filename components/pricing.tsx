@@ -15,7 +15,7 @@ const Pricing = () => {
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <h1 className="text-center text-4xl font-bold">Pricing</h1>
+        <h2 className="text-center text-4xl font-bold">Pricing</h2>
       </motion.div>
       <motion.div
         className="mx-auto flex max-w-7xl flex-col gap-4 px-8 lg:flex-row"
@@ -65,7 +65,7 @@ const Pricing = () => {
             style={{ minHeight: "500px" }}
           >
             <CardTitle className="text-3xl font-bold lg:text-start">
-              <h1 className="text-4xl font-bold lg:text-4xl">{plan.title}</h1>
+              <h2 className="text-4xl font-bold lg:text-4xl">{plan.title}</h2>
               <h2 className="text-2xl font-normal text-gray-400 lg:text-2xl">
                 {plan.price}
               </h2>
