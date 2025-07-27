@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 const Headline = () => {
   return (
     <>
-      <div className="relative h-auto lg:h-[calc(100vh-4rem)] w-screen p-4 lg:p-8">
+      <div className="relative h-auto w-screen p-4 lg:h-[calc(100vh-4rem)] lg:p-8">
         <Image
           src="/headline2.jpeg"
           alt="Headline"
