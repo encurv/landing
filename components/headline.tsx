@@ -3,18 +3,14 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { motion } from "motion/react";
+import Head from "next/head";
+import HeadlineImage from "./headline-image";
 
 const Headline = () => {
   return (
     <>
       <div className="relative h-auto w-screen p-4 lg:h-[calc(100vh-4rem)] lg:p-8">
-        <Image
-          src="/headline2.jpeg"
-          alt="Headline"
-          width={1920}
-          height={1080}
-          className="h-screen w-full rounded-4xl object-cover lg:h-full"
-        />
+        <HeadlineImage />
         <div className="absolute inset-0 rounded-4xl bg-black/50" />
         <div className="absolute top-1/2 left-1/2 z-10 flex -translate-x-1/2 -translate-y-1/2 transform flex-col items-center text-center text-white lg:mt-0">
           <motion.h1
