@@ -26,6 +26,13 @@ const Footer = () => {
           >
             LinkedIn
           </Link>
+
+          <Link
+            href="/"
+            className="text-lg font-medium hover:underline opacity-50 cursor-not-allowed"
+          >
+            Imprint
+          </Link>
         </div>
 
         <div className="hidden max-w-32 text-sm text-gray-400 sm:block">
