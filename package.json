@@ -9,14 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "@lottiefiles/dotlottie-react": "^0.14.4",
+    "@radix-ui/react-accordion": "^1.2.11",
+    "@radix-ui/react-separator": "^1.1.7",
     "@radix-ui/react-slot": "^1.2.3",
+    "@splinetool/react-spline": "^4.1.0",
+    "@splinetool/runtime": "^1.10.37",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.526.0",
+    "motion": "^12.23.9",
     "next": "15.4.4",
     "next-themes": "^0.4.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",
+    "react-lottie": "^1.2.10",
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {

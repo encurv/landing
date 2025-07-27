@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import { Button } from "./ui/button";
+import { motion } from "motion/react";
 
 const Headline = () => {
   return (
@@ -14,9 +17,14 @@ const Headline = () => {
         />
         <div className="absolute inset-0 rounded-4xl bg-black/50" />
         <div className="absolute top-1/2 left-1/2 z-10 flex -translate-x-1/2 -translate-y-1/2 transform flex-col items-center text-center text-white lg:mt-8">
-          <h1 className="mb-4 text-7xl lg:text-8xl">
+        <motion.h1
+            className="mb-4 text-7xl lg:text-8xl"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+        >
             Real Memory for AI. Out of the Box.
-          </h1>
+        </motion.h1>
           <p className="hidden sm:block lg:max-w-xl lg:text-lg">
             Fully managed memory engine for next-gen AI applications.
             <br />
