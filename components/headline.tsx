@@ -1,0 +1,41 @@
+import Image from "next/image";
+import { Button } from "./ui/button";
+
+const Headline = () => {
+  return (
+    <>
+      <div className="relative h-auto lg:h-[calc(100vh-4rem)] w-screen p-4 lg:p-8">
+        <Image
+          src="/headline2.jpeg"
+          alt="Headline"
+          width={1920}
+          height={1080}
+          className="h-screen w-full rounded-4xl object-cover lg:h-full"
+        />
+        <div className="absolute inset-0 rounded-4xl bg-black/50" />
+        <div className="absolute top-1/2 left-1/2 z-10 flex -translate-x-1/2 -translate-y-1/2 transform flex-col items-center text-center text-white lg:mt-8">
+          <h1 className="mb-4 text-7xl lg:text-8xl">
+            Real Memory for AI. Out of the Box.
+          </h1>
+          <p className="hidden sm:block lg:max-w-xl lg:text-lg">
+            Fully managed memory engine for next-gen AI applications.
+            <br />
+            Ship faster, while we care about the rest.
+          </p>
+          <div className="mt-8 flex w-full max-w-md items-center justify-between rounded-full bg-white/10 px-4 py-2">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="w-full bg-transparent text-white placeholder:text-gray-400 focus:outline-none"
+            />
+            <Button variant={"default"} className="ml-4 rounded-full">
+              Join waitlist
+            </Button>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Headline;
