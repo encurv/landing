@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "encurv.ai",
-  description: "Bend the Curve of Intelligence.",
+  title: "encurv - Scalable AI Tools for Apps, Assistants & Gen AI",
+  description: "encurv is an AI studio building tools like memory engines, context APIs, and assistants to help you ship powerful AI apps faster.",
 };
 
 export default function RootLayout({

@@ -103,7 +103,7 @@ const Navbar: FC<IProps> = ({ title }) => {
           }
         >
           <At />
-          <p className="text-sm">{title}</p>
+          <p className="text-sm">encurv</p>
         </Button>
       </motion.div>
     </nav>
