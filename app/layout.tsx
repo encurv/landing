@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,7 +17,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "encurv - Scalable AI Tools for Apps, Assistants & Gen AI",
-  description: "encurv is an AI studio building tools like memory engines, context APIs, and assistants to help you ship powerful AI apps faster.",
+  description:
+    "encurv is an AI studio building tools like memory engines, context APIs, and assistants to help you ship powerful AI apps faster.",
 };
 
 export default function RootLayout({
@@ -27,13 +29,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}
+        className={`${geistSans.variable} ${geistMono.variable} bg-black text-white antialiased`}
       >
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           disableTransitionOnChange
         >
+          <Toaster />
           <Navbar
             title={
               typeof metadata.title === "string"
