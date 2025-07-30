@@ -35,7 +35,7 @@ const Waitlist = () => {
     } catch (error) {
       console.error(error);
       toast.error(
-        "An error occurred while joining the waitlist. Please try again later.",
+        "An error occurred while joining the waitlist. Maybe you already added your email?",
       );
     } finally {
       setEmail("");

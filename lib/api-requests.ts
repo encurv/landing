@@ -13,8 +13,10 @@ export const saveEmail = async (email: string): Promise<SaveEmailResponse> => {
     },
     body: JSON.stringify({ email }),
   });
+  
   if (!response.ok) {
     throw new Error("Failed to save email");
   }
+
   return await response.json();
 };
